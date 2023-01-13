@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Avenirs Souhaitables</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css')}}">
+    <link rel="icon" href="{{ url_for('static', filename='logo-favicon.png') }}" type="image/x-icon">
+    <script src="https://kit.fontawesome.com/3e419ef354.js" crossorigin="anonymous"></script>
+    <title>Document</title>
+</head>
+
+<body>
+
+    <nav id="upper-navigation-bar">
+
+        <div id="upper-navigation-bar-logo" class="">
+            <a href="/"><span class="make-logo-clickable"></span></a>
+            <img src="{{ url_for('static', filename='img/logo-long.png') }}" id="logo-top-left" alt="logo">
+        </div>
+
+        <div id="upper-navigation-bar-tabs" class="">
+
+            <div class="upper-navigation-bar-atab">
+                <a href="{{ url_for('tous_nos_articles') }}">
+                    Tous nos articles
+                </a>
+            </div>
+    
+            <div class="upper-navigation-bar-atab">
+                <a href="{{ url_for('qui_sommes_nous') }}">
+                    Qui sommes-nous ?
+
+                </a>
+            </div>
+
+            <div class="select-menu">
+                <div class="select-btn">
+                    <span class="sBtn-text"></span>
+                    <i class="fa-solid fa-bars fa-xl"></i>
+                </div>
+        
+                <div id="options-list" class="options">
+
+                    <div class="option">
+                        <a href="{{ url_for('tous_nos_articles') }}"><span class="option-text">Tous nos articles</span></a>
+                    </div>
+
+                    <div class="option">
+                        <a href="{{ url_for('qui_sommes_nous') }}"><span class="option-text">Qui sommes nous ?</span></a>
+                    </div>
+
+                </div>
+            </div>
+        
+        </div>
+    </nav>
+
+
+    <div id="grand-parent">
+
+        <!-- title section "à la une" -->
+        <div class="title-section">
+            <div>article à la une</div>
+            <div class="title-section-hr-w750"></div>
+        </div>
+
+
+        <!-- article "à la une" template -->
+        <div class="article-alu">
+            <a href="{{ url_for('article_00002') }}">
+                <span class="make-article-clickable"></span>
+            </a>
+            <div class="article-alu-image"></div>
+            <div class="article-alu-overview">
+                <div class="article-alu-overview-category">
+                    CARBONE
+                </div>
+                <div class="article-alu-overview-title">
+                    Pourquoi un objectif de 2 tonnes de C02 en 2050 ?
+                </div>
+                <div class="article-alu-overview-extract">
+                    Il est possible que vous ayez déjà vu passer un chiffre symbolique dans les disucssions sur le climat : en 2050 nous aurions un budget carbone de 2 tonnes de CO2e par an et par personne sur Terre. 
+                    Nous allons décrypter dans cet article l origine de cet objectif, sa signification et savoir s il est atteignable. 
+                </div>
+                
+            </div>
+        </div>
+
+
+        <!-- title section "tous nos articles" -->
+        <div class="title-section">
+            <div>Derniers articles</div>
+            <div class="title-section-hr-w700"></div>
+        </div>
+
+
+        <!-- article lb section // row 1 -->
+        <div class="article-lb-section">
+
+            <!-- article lb  -->
+            <div class="article-lb">
+                <a href="{{ url_for('article_00001') }}">
+                    <span class="make-article-clickable"></span>
+                </a>
+                <div class="article-lb-image">
+                </div>
+                <div class="article-lb-overview">
+                    <div class="article-lb-overview-category">
+                        CARBONE
+                    </div>
+                    <div class="article-lb-overview-title">
+                        Nous avons un nouveau site web !
+                    </div>
+                    <div class="article-lb-overview-extract">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Error aut ipsam autem vero voluptatum blanditiis natus aliquid. Quas, impedit dolorum?
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div id="footer-div">
+            <span id="footer-span">Vous pouvez suivre Avenir Souhaitables sur</span> <a 
+            href="https://www.linkedin.com/company/avenirs-souhaitables/"
+            class="footer-link-default">
+                &nbsp;<i class="fa-brands fa-linkedin fa-lg"></i>&nbsp;LinkedIn
+            </a> 
+        </div>
+
+    </footer>
+
+</body>
+
+<script type="text/javascript" src="{{url_for('static', filename='script.js')}}"></script>
+
+</html>

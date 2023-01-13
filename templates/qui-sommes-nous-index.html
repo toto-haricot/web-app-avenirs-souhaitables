@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Avenirs Souhaitables</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css')}}">
+    <link rel="icon" href="{{ url_for('static', filename='img/logo-favicon.png') }}" type="image/x-icon">
+    <script src="https://kit.fontawesome.com/3e419ef354.js" crossorigin="anonymous"></script>
+    <title>Document</title>
+</head>
+
+<body>
+    
+    <nav id="upper-navigation-bar">
+
+        <div id="upper-navigation-bar-logo" class="">
+            <a href="/"><span class="make-logo-clickable"></span></a>
+            <img src="{{ url_for('static', filename='img/logo-long.png') }}" id="logo-top-left" alt="logo">
+        </div>
+
+        <div id="upper-navigation-bar-tabs" class="">
+
+            <div class="upper-navigation-bar-atab">
+                <a href="{{ url_for('tous_nos_articles') }}">
+                    Tous nos articles
+                </a>
+            </div>
+    
+            <div class="upper-navigation-bar-atab">
+                <a href="{{ url_for('qui_sommes_nous') }}">
+                    Qui sommes-nous ?
+                </a>
+            </div>
+        
+        </div>
+    
+    </nav>
+
+    <div id="grand-parent">
+
+        <div class="title-section">
+            <div>Qui sommes-nous ? </div>
+            <div class="title-section-hr-w70"></div>
+        </div>
+
+        <div id="introduction">
+            <p>
+                Avenirs Souhaitables a vu le jour à la fin de l'année 2022. 
+                Nous sommes un média indépendant qui a pour objectif de couvrir un maximum de sujets liés à l'environnement et l'actualité.
+            </p>
+
+            <p>
+                Pour suivre l'ensemble des contenus que nous partagons nous vous invitons à nous rejoindre sur les réseaux sociaux. 
+                Pour le moment, seuls notre compte LinkedIn et notre site web est actif. 
+                D'ici quelques semaines nous serons ravis de partager avec vous notre compte Instagram et d'autres potentielles plateformes. 
+            </p>
+        </div>
+
+        <div id="social-media-section">
+
+            <a 
+            href="https://www.linkedin.com/company/avenirs-souhaitables/"
+            class="footer-link">
+                &nbsp;<i class="fa-brands fa-linkedin fa-lg"></i>&nbsp;
+            </a> 
+
+            <a 
+            href="https://www.avenirs-souhaitables.com"
+            class="footer-link">
+                &nbsp;<i class="fa-regular fa-envelope fa-lg"></i>&nbsp;
+            </a> 
+
+            <a 
+            href="https://www.avenirs-souhaitables.com"
+            class="footer-link">
+                &nbsp;<i class="fa-brands fa-instagram fa-lg"></i>&nbsp;
+            </a> 
+
+
+
+        </div>
+    </div>
+
+    <footer>
+        <div id="footer-div">
+            Vous pouvez suivre Avenir Souhaitables sur <a 
+            href="https://www.linkedin.com/company/avenirs-souhaitables/"
+            class="footer-link-default">
+                &nbsp;<i class="fa-brands fa-linkedin fa-lg"></i>&nbsp;LinkedIn
+            </a> 
+        </div>
+
+    </footer>
+
+</body>

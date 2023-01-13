@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Avenirs Souhaitables</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css')}}">
+    <link rel="icon" href="{{ url_for('static', filename='logo-favicon.png') }}" type="image/x-icon">
+    <script src="https://kit.fontawesome.com/3e419ef354.js" crossorigin="anonymous"></script>
+    <title>Document</title>
+</head>
+
+<body>
+    
+    <nav id="upper-navigation-bar">
+
+        <div id="upper-navigation-bar-logo" class="">
+            <a href="/"><span class="make-logo-clickable"></span></a>
+            <img src="{{ url_for('static', filename='img/logo-long.png') }}" id="logo-top-left" alt="logo">
+        </div>
+
+        <div id="upper-navigation-bar-tabs" class="">
+
+            <div class="upper-navigation-bar-atab">
+                <a href="{{ url_for('tous_nos_articles') }}">
+                    Tous nos articles
+                </a>
+            </div>
+    
+            <div class="upper-navigation-bar-atab">
+                <a href="{{ url_for('qui_sommes_nous') }}">
+                    Qui sommes-nous ?
+                </a>
+            </div>
+        
+        </div>
+    
+    </nav>
+
+    <div id="grand-parent">
+
+        <div class="title-section">
+            <div>Retrouvez tous nos articles sur cette page </div>
+            <div class="title-section-hr-w40"></div>
+        </div>
+
+        <div id="introduction">
+            <p>
+                Avenirs Souhaitables a vu le jour à la fin de l'année 2022. 
+                Nous sommes un média indépendant qui a pour objectif de couvrir un maximum de sujets liés à l'environnement et l'actualité.
+                Naturellement nous n'avons pas encore eu le temps de traiter de l'ensemble des sujets que nous avons en tête. 
+            </p>
+
+            <p>
+                Néanmois nous sommes particulièrement motivés pour continuer à produire des contenus informatifs à propos des grands enjeux environnementaux que nous rencontrons actuellement.
+                Ce site va donc progressivement évoluer pour vous proposer de plus en plus de ressources.
+                Pour vous permettre de pouvoir retrouver rapidement un article vous pouvez vous référer à cette page.
+                Voici l'ensemble de nos articles classés par ordre chronologique de paruption : 
+            </p>
+            
+        </div>
+
+        <div class="glimpse-article-section">
+            <a href="article-index.html">
+                <span class="make-article-clickable"></span>
+            </a>
+            <div class="glimpse-image"
+                 style="background-image: url(../static/img/unsplash-0011.jpg); 
+                 background-size: 120%;
+                 background-position: center 15%;">
+            </div>
+            <div class="glimpse-infos">
+                <div class="glimpse-infos-title">Nous avons un nouveau site web !</div>
+                <div class="glimpse-infos-details">Catégorie : Communauté &nbsp;//&nbsp; Publié le 02/01/2023 &nbsp;//&nbsp; Écrit par toto &nbsp;//&nbsp; Lecture : 2 min</div>
+                <div class="glimpse-infos-description">Dans cet article on vous présente notre site web tout fraichement mis en ligne</div>
+
+            </div>
+        </div>
+
+        <div class="glimpse-article-section">
+            <a href="article-index.html">
+                <span class="make-article-clickable"></span>
+            </a>
+            <div class="glimpse-image"
+                 style="background-image: url(../static/img/unsplash-0012.jpg); 
+                 background-size: 150%;
+                 background-position: 65% 15%;">
+            </div>
+            <div class="glimpse-infos">
+                <div class="glimpse-infos-title">Greenwashing et neutralité carbone dans l'aviation</div>
+                <div class="glimpse-infos-details">Catégorie : Carbone &nbsp;//&nbsp; Publié le 02/01/2023 &nbsp;//&nbsp; Écrit par XXX &nbsp;//&nbsp; Lecture : 6 min</div>
+                <div class="glimpse-infos-description">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit voluptates minus fuga quaerat.</div>
+
+            </div>
+        </div>
+
+        <div class="glimpse-article-section">
+            <a href="article-index.html">
+                <span class="make-article-clickable"></span>
+            </a>
+            <div class="glimpse-image"
+                 style="background-image: url(../static/img/unsplash-0014.jpg); 
+                 background-size: 250%;
+                 background-position: center 0%;">
+            </div>
+            <div class="glimpse-infos">
+                <div class="glimpse-infos-title">Sommes nous réellement trop sur Terre ?</div>
+                <div class="glimpse-infos-details">Catégorie : Démographie &nbsp;//&nbsp; Publié le 02/01/2023 &nbsp;//&nbsp; Écrit par XXX &nbsp;//&nbsp; Lecture : 7 min</div>
+                <div class="glimpse-infos-description">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Possimus, expedita.</div>
+
+            </div>
+        </div>
+
+    </div>
+
+    <footer>
+        <div id="footer-div">
+            Vous pouvez suivre Avenir Souhaitables sur <a 
+            href="https://www.linkedin.com/company/avenirs-souhaitables/"
+            class="footer-link-default">
+                &nbsp;<i class="fa-brands fa-linkedin fa-lg"></i>&nbsp;LinkedIn
+            </a> 
+        </div>
+
+    </footer>
+
+</body>

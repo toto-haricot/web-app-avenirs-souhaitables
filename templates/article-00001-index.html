@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Avenirs Souhaitables</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css')}}">
+    <link rel="icon" href="images/logo-favicon.png" type="image/x-icon">
+    <script src="https://kit.fontawesome.com/3e419ef354.js" crossorigin="anonymous"></script>
+    <title>Document</title>
+</head>
+
+<body>
+
+    <nav id="upper-navigation-bar">
+
+        <div id="upper-navigation-bar-logo" class="">
+            <a href="/"><span class="make-logo-clickable"></span></a>
+            <img src="{{ url_for('static', filename='img/logo-long.png') }}" id="logo-top-left" alt="logo">
+        </div>
+
+        <div id="upper-navigation-bar-tabs" class="">
+
+            <div class="upper-navigation-bar-atab">
+                <a href="{{ url_for('tous_nos_articles') }}">
+                    Tous nos articles
+                </a>
+            </div>
+    
+            <div class="upper-navigation-bar-atab">
+                <a href="{{ url_for('qui_sommes_nous') }}">
+                    Qui sommes-nous ?
+
+                </a>
+            </div>
+
+            <div class="select-menu">
+                <div class="select-btn">
+                    <span class="sBtn-text"></span>
+                    <i class="fa-solid fa-bars fa-xl"></i>
+                </div>
+        
+                <div id="options-list" class="options">
+
+                    <div class="option">
+                        <a href="{{ url_for('tous_nos_articles') }}"><span class="option-text">Tous nos articles</span></a>
+                    </div>
+
+                    <div class="option">
+                        <a href="{{ url_for('qui_sommes_nous') }}"><span class="option-text">Qui sommes nous ?</span></a>
+                    </div>
+
+                </div>
+            </div>
+        
+        </div>
+    </nav>
+
+     <div id="grand-parent">
+
+        <div id="article-heading-section">
+
+            <div id="article-heading-category">
+                COMMUNAUTÉ
+            </div>
+
+            <div id="article-heading-title">
+                Nous avons un site web ! 
+            </div>
+
+            <div id="article-heading-subtitle-bar"></div>
+
+            <div id="article-heading-introduction">
+                Après plusieurs semaines de développement, nous sommes ravis d'enfin pouvoir vous partager notre site internet. Dans un premier temps, nous publierons chaque semaine des articles informatifs sur les grands enjeux environnementaux. À plus long terme, nous chercherons à vous partager de nouveaux types de contenus.
+            </div>
+
+            <div id="article-heading-details">
+                Écrit par Jean-Michel Vegan  &nbsp;-&nbsp; Publié le 19 Décembre 2022 &nbsp;-&nbsp; <i class="fa-regular fa-clock"></i>&nbsp;Lecture : 3 min
+            </div>
+
+        </div>
+
+        <div id="article-image-section">
+
+            <div id="article-image-00001"></div>
+            <div id="article-image-caption-00001">
+                Photo by Azzedine Rouichi on Unsplash
+            </div>
+
+        </div>
+
+        <!-- <div id="article-00001-image">
+        </div> -->
+
+        <div id="article-content">
+            <p class="a-paragraph">Ipsum dolor, sit amet consectetur adipisicing elit. Harum mollitia laudantium ea ad officia. Distinctio minima, dolor aliquam earum error nobis deleniti! Consequatur unde ipsam deserunt optio consectetur! Aliquam recusandae quasi voluptates accusamus nisi facilis id, dolorem, temporibus suscipit consectetur perferendis laboriosam? Iusto aut nisi fugiat nemo eos impedit ullam laudantium!</p>
+            <p class="a-paragraph">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quis, laborum molestias possimus, modi quaerat debitis, deleniti perferendis numquam nam repellat voluptas natus praesentium dolores ipsam recusandae esse commodi sit ducimus vero eius. Beatae facere eveniet, repellat deserunt asperiores non. Mollitia sunt blanditiis fugiat error doloremque? Quod animi consequuntur voluptatibus provident sed minus, molestiae praesentium odit harum autem qui cupiditate mollitia, ducimus eum corrupti hic expedita placeat impedit debitis dolorum, recusandae sequi. Minima at debitis officia. Perspiciatis ullam aut at architecto!</p>
+            <p class="a-paragraph">Ipsa voluptatibus assumenda rerum, reprehenderit in libero ipsum aspernatur sed dolores laboriosam illum animi facilis nam. Nulla porro voluptate quo ducimus, suscipit quae ipsum, atque ea officia hic aliquid sunt a, officiis totam deleniti harum voluptatum minima? Aliquid excepturi, id minima nesciunt voluptas cumque dolore repellendus itaque? Officia, autem? Repudiandae illum officia officiis laboriosam alias animi quidem.</p>
+            <p class="a-paragraph">Ipsum dolor, sit amet consectetur adipisicing elit. Harum mollitia laudantium ea ad officia. Distinctio minima, dolor aliquam earum error nobis deleniti! Consequatur unde ipsam deserunt optio consectetur! Aliquam recusandae quasi voluptates accusamus nisi facilis id, dolorem, temporibus suscipit consectetur perferendis laboriosam? Iusto aut nisi fugiat nemo eos impedit ullam laudantium!</p>
+        </div>
+
+     </div>
+
+     <footer>
+        <div id="footer-div">
+            Vous pouvez suivre Avenir Souhaitables sur <a 
+            href="https://www.linkedin.com/company/avenirs-souhaitables/"
+            class="footer-link-default">
+                &nbsp;<i class="fa-brands fa-linkedin fa-lg"></i>&nbsp;LinkedIn
+            </a> 
+        </div>
+
+    </footer>
+
+</body>
