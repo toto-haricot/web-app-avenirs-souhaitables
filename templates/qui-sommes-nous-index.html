@@ -31,11 +31,30 @@
             <div class="upper-navigation-bar-atab">
                 <a href="{{ url_for('qui_sommes_nous') }}">
                     Qui sommes-nous ?
+
                 </a>
+            </div>
+
+            <div class="select-menu">
+                <div class="select-btn">
+                    <span class="sBtn-text"></span>
+                    <i class="fa-solid fa-bars fa-4x"></i>
+                </div>
+        
+                <div id="options-list" class="options">
+
+                    <div class="option">
+                        <a class="option-link" href="{{ url_for('tous_nos_articles') }}"><span class="option-text">Tous nos articles</span></a>
+                    </div>
+
+                    <div class="option">
+                        <a href="{{ url_for('qui_sommes_nous') }}"><span class="option-text">Qui sommes nous ?</span></a>
+                    </div>
+
+                </div>
             </div>
         
         </div>
-    
     </nav>
 
     <div id="grand-parent">
@@ -47,16 +66,62 @@
 
         <div id="introduction">
             <p>
-                Avenirs Souhaitables a vu le jour à la fin de l'année 2022. 
-                Nous sommes un média indépendant qui a pour objectif de couvrir un maximum de sujets liés à l'environnement et l'actualité.
+                Avenirs Souhaitables est un projet né de deux amis, Hugo et Yassine, tous deux passionnés par le journalisme et fervents défenseurs du climat. 
+                Ils ont décidé d’allier leurs plumes et leurs engagements pour créer un média indépendant et ils y travaillent de façon bénévole avec les nouvelles recrues Thomas et Alexandra.
             </p>
-
             <p>
-                Pour suivre l'ensemble des contenus que nous partagons nous vous invitons à nous rejoindre sur les réseaux sociaux. 
-                Pour le moment, seuls notre compte LinkedIn et notre site web est actif. 
-                D'ici quelques semaines nous serons ravis de partager avec vous notre compte Instagram et d'autres potentielles plateformes. 
+                L’idée est de vous proposer du contenu sur des faits d’actualité en lien avec le climat tout en proposant des solutions faciles à mettre en place et à la portée de tous.
+            </p>
+            <p>
+                Nous avons la volonté de faire changer les mentalités du plus grand nombre et avons envie de croire, et de vous convaincre, qu’un avenir soutenable et respectueux de la planète est possible.
             </p>
         </div>
+
+        <div class="title-section">
+            <div>L'équipe</div>
+            <div class="title-section-hr-w70"></div>
+        </div>
+
+        <div class="qui-sommes-nous-drawings-section">
+            <div class="qui-sommes-nous-a-person">
+                <div 
+                    class="qui-sommes-nous-drawing"
+                    style="background-image: url(../static/img/drawing-hugo.jpg); 
+                           background-size: cover;"></div>
+                <div class="qui-sommes-nous-details">
+                    Co-fondateur et rédacteur
+                </div>
+            </div>
+            <div class="qui-sommes-nous-a-person">
+                <div 
+                    class="qui-sommes-nous-drawing"
+                    style="background-image: url(../static/img/drawing-yassine.jpg); 
+                           background-size: cover;"></div>
+                <div class="qui-sommes-nous-details">
+                    Co-fondateur et rédacteur
+                </div>
+            </div>
+            <div class="qui-sommes-nous-a-person">
+                <div 
+                    class="qui-sommes-nous-drawing"
+                    style="background-image: url(../static/img/drawing-alexandra.jpg); 
+                           background-size: cover;"></div>
+                <div class="qui-sommes-nous-details">
+                    Marketing et Communication
+                </div>
+            </div>
+            <div class="qui-sommes-nous-a-person">
+                <div 
+                    class="qui-sommes-nous-drawing"
+                    style="background-image: url(../static/img/drawing-thomas.jpg); 
+                           background-size: cover;"></div>
+                <div class="qui-sommes-nous-details">
+                    Développement web
+                </div>
+            </div>
+        </div>
+
+
 
         <div id="social-media-section">
 
@@ -95,3 +160,7 @@
     </footer>
 
 </body>
+
+<script type="text/javascript" src="{{url_for('static', filename='script.js')}}"></script>
+
+</html>

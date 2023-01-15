@@ -38,13 +38,13 @@
             <div class="select-menu">
                 <div class="select-btn">
                     <span class="sBtn-text"></span>
-                    <i class="fa-solid fa-bars fa-xl"></i>
+                    <i class="fa-solid fa-bars fa-4x"></i>
                 </div>
         
                 <div id="options-list" class="options">
 
                     <div class="option">
-                        <a href="{{ url_for('tous_nos_articles') }}"><span class="option-text">Tous nos articles</span></a>
+                        <a class="option-link" href="{{ url_for('tous_nos_articles') }}"><span class="option-text">Tous nos articles</span></a>
                     </div>
 
                     <div class="option">
@@ -73,12 +73,11 @@
 
             <div id="article-heading-introduction">
                 Il est possible que vous ayez déjà vu passer un chiffre symbolique dans les disucssions sur le climat : en 2050 nous aurions un budget carbone de 2 tonnes de CO2e par an et par personne sur Terre. 
-                Nous allons décrypter dans cet article l origine de cet objectif, sa signification et savoir s il est atteignable.
-
+                Nous allons décrypter dans cet article l'origine de cet objectif, sa signification et savoir s il est atteignable.
             </div>
 
             <div id="article-heading-details">
-                Écrit par Yassine Baouch  &nbsp;-&nbsp; Publié le 12 janvier 2023 &nbsp;-&nbsp; <i class="fa-regular fa-clock"></i>&nbsp;Lecture : 7 min
+                Écrit par <a href="https://www.linkedin.com/in/yassinebaouch/" class="article-link">Yassine Baouch</a> &nbsp;-&nbsp; Publié le 12 janvier 2023 &nbsp;-&nbsp; <i class="fa-regular fa-clock"></i>&nbsp;Lecture : 11 min
             </div>
 
         </div>
@@ -86,9 +85,10 @@
         <div id="article-heading-image-section">
 
             <div id="article-heading-image"
-                 style="background-size: 100%;
-                 background-position: 50% 22%;;
-                 background-image: url(../static/img/unsplash-0020.jpg);">
+                 style="
+                    background-size: 100%;
+                    background-position: 50% 22%;;
+                    background-image: url(../static/img/unsplash-0020.jpg);">
             </div>
             <div id="article-heading-image-caption">
                 Photo by Azzedine Rouichi on Unsplash
@@ -108,94 +108,72 @@
             
             <p class="article-h1">UN OBJECTIF MONDIAL</p>
             <p class="article-h2">Accords de Paris</p>
-            <p class="article-paragraph">En 2015, le désormais célèbre <a class="article-link" href="https://unfccc.int/sites/default/files/french_paris_agreement.pdf">Accord de Paris</a> unifiait 193 pays vers un objectif commun : continuer les efforts pour limiter une augmentation de la température moyenne mondiale à 1.5°C et contenir une augmentation nettement en dessous de 2°C par rapport au niveau préindustriel. </p>
+            <p class="article-paragraph">En 2015, le désormais célèbre <a class="article-link" href="https://unfccc.int/sites/default/files/french_paris_agreement.pdf">Accord de Paris</a> unifiait 193 pays vers un objectif commun : <b>continuer les efforts pour limiter une augmentation de la température moyenne mondiale à 1.5°C et contenir une augmentation nettement en dessous de 2°C par rapport au niveau préindustriel</b>. </p>
             <p class="article-paragraph"><em><b>Comment y arriver ?</em></b></p>
             <p class="article-paragraph">Les travaux du GIEC (Groupe d'experts intergouvernemental sur l'évolution du climat) ont notamment été mentionnés à plusieurs reprises dans l’Accord de Paris. Ces rapports attribuent avec certitude l'augmentation de la hausse mondiale des températures à nos émissions de gaz à effet de serre, il est donc impératif de les réduire. En effet, plus nous en émettons, plus ils s’accumulent dans l’atmosphère et contribuent à réchauffer la Terre.</p>
             <p class="article-paragraph"><em><b>Jusqu’à quel point faudrait-il baisser nos émissions ?</b></em></p>
             <p class="article-paragraph">Cela figure aussi dans l’Accord de Paris. Toute mesure doit être prise “de façon à parvenir à un équilibre entre les émissions anthropiques par les sources et les absorptions anthropiques par les puits de gaz à effet de serre au cours de la deuxième moitié du siècle”.</p>
-            <p class="article-paragraph">Cet équilibre, c’est ce qu’on appelle plus communément la “neutralité carbone”. </p>
-            
-
+            <p class="article-paragraph">Cet équilibre, c’est ce qu’on appelle plus communément la <b>“neutralité carbone”</b>. </p>
             
             <div class="article-image-section">
-                <div class="article-image"
-                     style="
-                            background-image: url(../static/img/article_images/article-00002-img001.png);
-                            background-size: contain;
-                            width: 390px;
-                            height: 300px;">
-                </div>
+                <div class="article-00002-image-001"></div>
+            
                 <div class="article-image-caption">
                     Schématisation de l’équilibre entre émissions et absorptions anthropiques // Source : <a class="article-link" href="https://www.ecologie.gouv.fr/strategie-nationale-bas-carbone-snbc">MTES</a>
                 </div>
             </div>
-
-
             
             <p class="article-h2">Pourquoi viser absolument +1.5°C ?</p>
-            <p class="article-paragraph">S’il est si important de ne pas dépasser un réchauffement de 1.5°c par rapport à l’ère préindustrielle, c’est que les effets d’un réchauffement plus important sont conséquents. 
+            <p class="article-paragraph">S’il est si important de ne pas dépasser un réchauffement de 1.5°C par rapport à l’ère préindustrielle, c’est que les effets d’un réchauffement plus important sont conséquents. 
                 Sur l’infographie ci-dessous, il est présenté par exemple que dans un monde à 2°C, les coraux, essentiels à la biodiversité marine, <b>n’existeront plus</b>. 
                 De même, les villes côtières seront plus touchées par des submersions. Par conséquent, chaque dixième de degré compte.</p>
-            
-
 
             <div class="article-image-section">
-                <div class="article-image"
-                        style="background-image: url(../static/img/article_images/article-00002-img002.png);">
-                </div>
+                <div class="article-00002-image-002"></div>
                 <div class="article-image-caption">
-                    Schématisation de l’équilibre entre émissions et absorptions anthropiques // Source : <a class="article-link" href="https://www.ecologie.gouv.fr/strategie-nationale-bas-carbone-snbc">MTES</a>
+                    Différence d’impact entre 1.5°C et 2°C // Source : AFP, GIEC
                 </div>
             </div>
-
-
 
             <p class="article-h1">SOMMES NOUS SUR LE BON CHEMIN ?</p>
             <p class="article-paragraph">Pas vraiment.</p>
-            <p class="article-paragraph">En 2022, la population mondiale a émis environ 40.6 Gt de CO2e selon Global Carbon Budget. Un record.</p>
-            <p class="article-paragraph">Pour chaque horizon de température moyenne mondiale à atteindre (+1.5°C, +2°C, +3°C..), un budget carbone y est associé. Si l’on continue d’émettre autant de gaz à effet de serre que l’année 2022, le budget carbone afin de ne pas franchir la barre des +1.5°C sera atteint d’ici 7 à 10 ans [1].</p>
-            <p class="article-paragraph">Selon le dernier rapport du GIEC, les émissions doivent passer par un pic entre 2020 et 2025 afin de réduire drastiquement jusqu’à atteindre neutralité carbone 2050.</p>
-            <p class="article-paragraph">Un rapport de l’ONU publié 2 semaines avant la COP27, a montré que selon les mesures nationales prises par les 193 parties signataires de l’Accord de Paris, nous divergeons par rapport à l’objectif des +1.5°C voire même celui des +2°C,  visible en rouge sur la figure ci-dessous.</p>
+            <p class="article-paragraph">En 2022, la population mondiale a émis environ 40.6 Gt de CO2e selon <a class="article-link" href="https://globalcarbonbudget.org/no-sign-of-decrease-in-global-co2-emissions/">Global Carbon Budget</a>. Un record.</p>
+            <p class="article-paragraph">Pour chaque horizon de température moyenne mondiale à atteindre (+1.5°C, +2°C, +3°C..), un budget carbone y est associé. Si l’on continue d’émettre autant de gaz à effet de serre que l’année 2022, le budget carbone afin de ne pas franchir la barre des +1.5°C sera atteint d’ici <b>7 à 10 ans</b> [1].</p>
+            <p class="article-paragraph">Selon le dernier <a class="article-link" href="https://www.ipcc.ch/report/ar6/wg1/chapter/technical-summary/">Rapport du GIEC</a>, les émissions doivent passer par un pic entre 2020 et 2025 afin de réduire drastiquement jusqu’à atteindre neutralité carbone 2050.</p>
+            <p class="article-paragraph">Un <a class="article-link" href="https://news.un.org/fr/story/2022/10/1129172">rapport de l'ONU</a> publié 2 semaines avant la COP27, a montré que selon les mesures nationales prises par les 193 parties signataires de l’Accord de Paris, nous <b>divergeons</b> par rapport à l’objectif des +1.5°C voire même celui des +2°C,  visible en <span class="article-color-red">rouge</span> sur la figure ci-dessous.</p>
 
-            <div id="article-image-section">
-                <div id="article-image"
-                     style="background-size: 100%;
-                     background-position: 50% 22%;;
-                     background-image: url(../static/img/unsplash-0010.jpg);">
-                </div>
-                <div id="article-image-caption">
+            <div class="article-image-section">
+                <div class="article-00002-image-003"></div>
+                <div class="article-image-caption">
                     Projection de l’évolution des GES en fonction des plans climats actuels des pays // Source : CCNUCC
                 </div>
             </div>
 
             <p class="article-h1">POURQUOI LE CHIFFRE DE 2 TONNES CO2e/HAB/AN ?</p>
             <p class="article-h2">Un chiffre assez compliqué</p>
-            <p class="article-paragraph">On le voit circuler assez souvent comme étant un objectif de référence, la SNBC (p.43) (Stratégie nationale Bas-Carbone) l’énonçait en 2018 : </p>
+            <p class="article-paragraph">On le voit circuler assez souvent comme étant un objectif de référence, la <a class="article-link" href="https://www.ecologie.gouv.fr/sites/default/files/Projet%20strategie%20nationale%20bas%20carbone.pdf">SNBC</a> (p.43) (Stratégie nationale Bas-Carbone) l’énonçait en 2018 : </p>
             <p class="article-citation">“[..] pour limiter l’augmentation des températures à + 2 °C, il faut viser dès les prochaines décennies une empreinte carbone à l’échelle mondiale de 2 tonnes de CO2eq par personne.”</p>
-            <p class="article-paragraph">En outre, cet objectif a été également démocratisé par l’Atelier 2 tonnes : </p>
+            <p class="article-paragraph">En outre, cet objectif a été également démocratisé par <a class="article-link" href="https://www.2tonnes.org/a-propos">l'Atelier 2 tonnes</a> : </p>
             <p class="article-citation">“Cette évolution doit atténuer le plus possible le dérèglement climatique, soit +1,5°C en 2100. [..] Par exemple, il s’agit notamment d’émettre en moyenne moins de 2tCO2e/personne en 2050.”</p>
             <p class="article-paragraph">À travers ces deux exemples, on voit bien qu’il reste difficile et assez flou d’identifier vers quelle trajectoire l’on se dirige avec un objectif de 2 tonnes de CO2e en 2050.</p>
             <p class="article-h2">D'où vient ce chiffre ?</p>
             <p class="article-paragraph">Afin de mieux comprendre l’origine de ce chiffre, il convient d’utiliser les travaux de modélisation de trajectoire du GIEC. Pour chaque trajectoire on connait ce qu’il faudra plus ou moins émettre à tel horizon de temps.</p>
-            <p class="article-paragraph">Le calcul est assez simple : on divise ce que l’on doit émettre par le nombre d’habitant en 2050. Nous connaissons les deux termes : 
+            <p class="article-paragraph">Le calcul est assez simple : <b>on divise ce que l’on doit émettre par le nombre d’habitant en 2050</b>. Nous connaissons les deux termes : 
                 <ul>
-                    <li class="article-paragraph">Le dernier rapport du GIEC nous fournit ce que l’on doit émettre en 2050 selon chaque trajectoire.</li>
-                    <li class="article-paragraph">La population mondiale atteindra environ 10 milliards d’individus en 2050 en ordre de grandeur. (IAE Net Zero Report, p.50)</li>
+                    <li class="article-paragraph">Le <a class="article-link" href="https://www.ipcc.ch/report/ar6/wg1/chapter/technical-summary/">dernier rapport du GIEC</a> nous fournit ce que l’on doit émettre en 2050 selon chaque trajectoire.</li>
+                    <li class="article-paragraph">La population mondiale atteindra environ 10 milliards d’individus en 2050 en ordre de grandeur. (<a class="article-link" href="https://www.iea.org/reports/net-zero-by-2050">IAE Net Zero Report</a>, p.50)</li>
                 </ul>
             </p>
-            <p class="article-h3">Empreinte carbone en 2050 selon la trajectoire de réchauffement climatique en CO2e</p>
             
-            <div id="article-image-section">
-                <div id="article-image"
-                     style="background-size: 100%;
-                     background-position: 50% 22%;;
-                     background-image: url(../static/img/unsplash-0010.jpg);
-                     margin-top: 2px;">
+            <div class="article-image-section">
+                <div class="article-00002-image-004"></div>
+                <div class="article-image-caption">
+                    Empreinte carbone en 2050 selon la trajectoire de réchauffement climatique en CO2e
                 </div>
             </div>
 
             <p class="article-paragraph">Par conséquent, afin de rester en ligne avec une trajectoire +1.5°C il faudrait émettre en 2050 environ 0,9tCO2e/hab/an. Aussi, il faudrait atteindre l’objectif de 2tCO2e/hab/an pour se limiter à une augmentation de température de +2°C.</p>
-            <p class="article-paragraph">Ainsi, si l’on voulait respecter l’Accord de Paris, il faudrait viser en entre 0.9t et 2tCO2e par personne sur Terre en 2050.</p>
+            <p class="article-paragraph">Ainsi, si l’on voulait respecter l’Accord de Paris, il faudrait viser en entre <b>0.9t et 2tCO2e</b> par personne sur Terre en 2050.</p>
             <p class="article-paragraph">Toutefois, deux points de vigilance sont à souligner sur la lecture de cette grille : 
                 <ul>
                     <li class="article-paragraph">Il est important de rappeler que le GIEC ne prédit pas l'avenir, il synthétise la documentation scientifique existante et produit des projections, qui sont à interpréter comme des chemins potentiels. Chaque projection admet un nombre conséquent d’hypothèses.</li>
@@ -205,37 +183,32 @@
 
             <p class="article-h1">PASSER DE 10 TONNES CO2e À 2 TONNES CO2e : EST-CE RÉALISABLE ?</p>
             <p class="article-h2">Une forte empreinte carbone dûe au niveau de vie</p>
-            <p class="article-paragraph">En France, l’empreinte carbone moyenne par habitant s’élève à environ 10tCO2e en 2019. La même tendance se retrouve dans les autres pays dits “riches”, pays à forte consommation. En effet, l’empreinte carbone est un reflet de notre consommation, fortement lié à notre niveau de vie. </p>
-            <p class="article-paragraph">Par conséquent, les pays en voie de développement auront une empreinte carbone moyenne par habitant significativement beaucoup plus faible par habitant. Par exemple, en Côte d’Ivoire, l’empreinte carbone moyenne s’élève à 0.57tCO2e en 2019, 20 fois moins qu’en France donc. Leur défi est de pouvoir se développer et d’atteindre un niveau de vie correct (accès à l’électricité, réseau de transport en commun fiable..) tout en ayant une empreinte faible en carbone.</p>
-            <p class="article-paragraph">Passer de 10tCO2e à 2tCO2e, cela revient à diviser les émissions d’un Français par 5 en moins de 30 ans (-5% par an). Les actions individuelles et collectives seront de mise, et ne pourront pas être dissociées l’une de l’autre afin d’atteindre cet objectif.</p>
+            <p class="article-paragraph">En France, l’empreinte carbone moyenne par habitant s’élève à environ <a class="article-link" href="https://www.myco2.fr/actualites/empreinte-carbone-francaise-moyenne-comment-est-elle-calculee">10tCO2e</a> en 2019. La même tendance se retrouve dans les autres pays dits “riches”, pays à forte consommation. En effet, l’empreinte carbone est un reflet de notre consommation, fortement lié à notre niveau de vie. </p>
+            <p class="article-paragraph">Par conséquent, les pays en voie de développement auront une empreinte carbone moyenne par habitant significativement beaucoup plus faible par habitant. Par exemple, en Côte d’Ivoire, l’empreinte carbone moyenne s’élève à <a class="article-link" href="https://ourworldindata.org/grapher/consumption-co2-per-capita?time=2019">0.57tCO2e</a> en 2019, 20 fois moins qu’en France donc. Leur défi est de pouvoir se développer et d’atteindre un niveau de vie correct (accès à l’électricité, réseau de transport en commun fiable..) tout en ayant une empreinte faible en carbone.</p>
+            <p class="article-paragraph">Passer de 10tCO2e à 2tCO2e, cela revient à diviser les émissions d’un Français <b>par 5</b> en moins de 30 ans (-5% par an). Les actions individuelles et collectives seront de mise, et ne pourront pas être dissociées l’une de l’autre afin d’atteindre cet objectif.</p>
             <p class="article-h2">Ce que représentent 2 tonnes de CO2e</p>
-            <p class="article-paragraph">Sans surprise, avec un A/R Paris - New York en avion, vous épuisez la totalité de votre budget carbone en 2050.. De même si vous mangez 300 repas cuisinés avec du bœuf vous atteignez déjà 2 tonnes de CO2e.</p>
+
+            <div class="article-image-section">
+                <div class="article-00002-image-005"></div>
+                <div class="article-image-caption">
+                    Divers actions de consommation représentant 2 tonnes de CO2e // ADEME
+                </div>
+            </div>
+
+            <p class="article-paragraph">Sans surprise, avec un A/R Paris - New York en avion, vous épuisez la <b>totalité</b> de votre budget carbone en 2050.. De même si vous mangez 300 repas cuisinés avec du bœuf vous atteignez déjà 2 tonnes de CO2e.</p>
             <p class="article-paragraph">Chaque acte de consommation a un impact, il convient alors de connaître et maîtriser notre façon de consommer. Il est alors tout à fait faisable d’avoir une empreinte carbone faible, à la condition que le mode de vie doit changer aussi : adopter un régime moins carné, voyager plus localement et plus sobrement, prolonger la durée de vie de vos appareils.</p>
 
             <p class="article-h1">POUR ALLER PLUS LOIN</p>
-            <p class="article-paragraph">Notre grand défi du XXIᵉ siècle, puisqu’il faudra changer nos modes de vie pour limiter les effets du dérèglement climatique déjà visible en France et s’y adapter, c’est aussi de pouvoir repenser nos imaginaires. De pouvoir décrire un récit, une direction vers laquelle les usages carbonés ne seront plus souhaitables, et où être ne sera plus avoir.</p>
-            <p class="article-paragraph">Maintenant que ce chiffre de 2 tonnes de CO2e à atteindre en 2050 vous est plus familier, la première grande étape est donc de connaître votre propre empreinte carbone afin d’avoir les bons ordres de grandeur :  https://agirpourlatransition.ademe.fr/particuliers/testez-vos-connaissances/connaissez-empreinte-climat</p>
+            <p class="article-paragraph">Notre grand défi du XXIᵉ siècle, puisqu’il faudra changer nos modes de vie pour limiter les effets du dérèglement climatique déjà visible en France et s’y adapter, c’est aussi de pouvoir <b>repenser nos imaginaires</b>. De pouvoir décrire un récit, une direction vers laquelle les usages carbonés ne seront plus souhaitables, et <b>où être ne sera plus avoir</b>.</p>
+            <p class="article-paragraph">Maintenant que ce chiffre de 2 tonnes de CO2e à atteindre en 2050 vous est plus familier, la première grande étape est donc de connaître votre propre empreinte carbone afin d’avoir les bons ordres de grandeur :  <a class="article-link" href="https://agirpourlatransition.ademe.fr/particuliers/testez-vos-connaissances/connaissez-empreinte-climat">mon empreinte carbone</a></p>
+            <p class="article-paragraph"><u>Source</u> :</p>
 
-
-
-
-
-            
-            
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+            <div class="article-image-section">
+                <div class="article-00002-image-006"></div>
+                <div class="article-image-caption">
+                    Chiffres extraits de Carbon Brief et Global Carbon Project // Émissions en 2022 : 40.5GtCO2ep
+                </div>
+            </div>
         </div>
 
      </div>
@@ -252,3 +225,7 @@
     </footer>
 
 </body>
+
+<script type="text/javascript" src="{{url_for('static', filename='script.js')}}"></script>
+
+</html>

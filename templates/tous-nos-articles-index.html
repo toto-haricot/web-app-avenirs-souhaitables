@@ -31,11 +31,30 @@
             <div class="upper-navigation-bar-atab">
                 <a href="{{ url_for('qui_sommes_nous') }}">
                     Qui sommes-nous ?
+
                 </a>
+            </div>
+
+            <div class="select-menu">
+                <div class="select-btn">
+                    <span class="sBtn-text"></span>
+                    <i class="fa-solid fa-bars fa-4x"></i>
+                </div>
+        
+                <div id="options-list" class="options">
+
+                    <div class="option">
+                        <a class="option-link" href="{{ url_for('tous_nos_articles') }}"><span class="option-text">Tous nos articles</span></a>
+                    </div>
+
+                    <div class="option">
+                        <a href="{{ url_for('qui_sommes_nous') }}"><span class="option-text">Qui sommes nous ?</span></a>
+                    </div>
+
+                </div>
             </div>
         
         </div>
-    
     </nav>
 
     <div id="grand-parent">
@@ -62,53 +81,34 @@
         </div>
 
         <div class="glimpse-article-section">
-            <a href="article-index.html">
+            <a href="{{ url_for('article_00002') }}">
+                <span class="make-article-clickable"></span>
+            </a>
+            <div class="glimpse-image"
+                 style="background-image: url(../static/img/unsplash-0005.jpg); 
+                 background-size: 180%;
+                 background-position: 65% 15%;">
+            </div>
+            <div class="glimpse-infos">
+                <div class="glimpse-infos-title">Pourquoi un objectif de 2 tonnes de CO2 en 2050 ?</div>
+                <div class="glimpse-infos-details">Catégorie : Empreinte Carbone &nbsp;//&nbsp; Publié le 16/01/2023 &nbsp;//&nbsp; Écrit par Yassine &nbsp;//&nbsp; Lecture : 11 min</div>
+                <div class="glimpse-infos-description">On vous aide à comprendre d'où vient ce chiffre tant cité de 2 tonnes de carbone par an.</div>
+            </div>
+        </div>
+
+        <div class="glimpse-article-section">
+            <a href="{{ url_for('article_00001') }}">
                 <span class="make-article-clickable"></span>
             </a>
             <div class="glimpse-image"
                  style="background-image: url(../static/img/unsplash-0011.jpg); 
-                 background-size: 120%;
-                 background-position: center 15%;">
+                        background-size: 100%;
+                        background-position: center 23%;">
             </div>
             <div class="glimpse-infos">
-                <div class="glimpse-infos-title">Nous avons un nouveau site web !</div>
-                <div class="glimpse-infos-details">Catégorie : Communauté &nbsp;//&nbsp; Publié le 02/01/2023 &nbsp;//&nbsp; Écrit par toto &nbsp;//&nbsp; Lecture : 2 min</div>
-                <div class="glimpse-infos-description">Dans cet article on vous présente notre site web tout fraichement mis en ligne</div>
-
-            </div>
-        </div>
-
-        <div class="glimpse-article-section">
-            <a href="article-index.html">
-                <span class="make-article-clickable"></span>
-            </a>
-            <div class="glimpse-image"
-                 style="background-image: url(../static/img/unsplash-0012.jpg); 
-                 background-size: 150%;
-                 background-position: 65% 15%;">
-            </div>
-            <div class="glimpse-infos">
-                <div class="glimpse-infos-title">Greenwashing et neutralité carbone dans l'aviation</div>
-                <div class="glimpse-infos-details">Catégorie : Carbone &nbsp;//&nbsp; Publié le 02/01/2023 &nbsp;//&nbsp; Écrit par XXX &nbsp;//&nbsp; Lecture : 6 min</div>
-                <div class="glimpse-infos-description">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit voluptates minus fuga quaerat.</div>
-
-            </div>
-        </div>
-
-        <div class="glimpse-article-section">
-            <a href="article-index.html">
-                <span class="make-article-clickable"></span>
-            </a>
-            <div class="glimpse-image"
-                 style="background-image: url(../static/img/unsplash-0014.jpg); 
-                 background-size: 250%;
-                 background-position: center 0%;">
-            </div>
-            <div class="glimpse-infos">
-                <div class="glimpse-infos-title">Sommes nous réellement trop sur Terre ?</div>
-                <div class="glimpse-infos-details">Catégorie : Démographie &nbsp;//&nbsp; Publié le 02/01/2023 &nbsp;//&nbsp; Écrit par XXX &nbsp;//&nbsp; Lecture : 7 min</div>
-                <div class="glimpse-infos-description">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Possimus, expedita.</div>
-
+                <div class="glimpse-infos-title">Nous avons un site web !</div>
+                <div class="glimpse-infos-details">Catégorie : Communauté &nbsp;//&nbsp; Publié le 16/01/2023 &nbsp;//&nbsp; Écrit par Thomas &nbsp;//&nbsp; Lecture : 2 min</div>
+                <div class="glimpse-infos-description">Dans cet article on vous présente notre site web tout juste mis en ligne</div>
             </div>
         </div>
 
@@ -126,3 +126,7 @@
     </footer>
 
 </body>
+
+<script type="text/javascript" src="{{url_for('static', filename='script.js')}}"></script>
+
+</html>

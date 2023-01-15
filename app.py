@@ -9,6 +9,10 @@ app.debug = True
 def homepage():
     return render_template("homepage-index.html")
 
+@app.route('/test')
+def testpage():
+    return render_template("test.html")
+
 @app.route('/qui_sommes_nous', methods=['GET', 'POST'])
 def qui_sommes_nous():
     if request.method == 'POST':

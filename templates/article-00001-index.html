@@ -57,7 +57,7 @@
         </div>
     </nav>
 
-     <div id="grand-parent">
+    <div id="grand-parent">
 
         <div id="article-heading-section">
 
@@ -66,7 +66,7 @@
             </div>
 
             <div id="article-heading-title">
-                Nous avons un site web ! 
+                Nous avons un site web !
             </div>
 
             <div id="article-heading-subtitle-bar"></div>
@@ -76,16 +76,21 @@
             </div>
 
             <div id="article-heading-details">
-                Écrit par Jean-Michel Vegan  &nbsp;-&nbsp; Publié le 19 Décembre 2022 &nbsp;-&nbsp; <i class="fa-regular fa-clock"></i>&nbsp;Lecture : 3 min
+                Écrit par <a href="https://www.linkedin.com/in/yassinebaouch/" class="article-link">Toto</a> &nbsp;-&nbsp; Publié le 16 janvier 2023 &nbsp;-&nbsp; <i class="fa-regular fa-clock"></i>&nbsp;Lecture : 2 min
             </div>
 
         </div>
 
-        <div id="article-image-section">
+        <div id="article-heading-image-section">
 
-            <div id="article-image-00001"></div>
-            <div id="article-image-caption-00001">
-                Photo by Azzedine Rouichi on Unsplash
+            <div id="article-heading-image"
+                 style="
+                    background-size: 100%;
+                    background-position: 50% 55%;
+                    background-image: url(../static/img/unsplash-0022.jpg);">
+            </div>
+            <div id="article-heading-image-caption">
+                Photo by Jillian Kim on Unsplash
             </div>
 
         </div>
@@ -94,10 +99,15 @@
         </div> -->
 
         <div id="article-content">
-            <p class="a-paragraph">Ipsum dolor, sit amet consectetur adipisicing elit. Harum mollitia laudantium ea ad officia. Distinctio minima, dolor aliquam earum error nobis deleniti! Consequatur unde ipsam deserunt optio consectetur! Aliquam recusandae quasi voluptates accusamus nisi facilis id, dolorem, temporibus suscipit consectetur perferendis laboriosam? Iusto aut nisi fugiat nemo eos impedit ullam laudantium!</p>
-            <p class="a-paragraph">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quis, laborum molestias possimus, modi quaerat debitis, deleniti perferendis numquam nam repellat voluptas natus praesentium dolores ipsam recusandae esse commodi sit ducimus vero eius. Beatae facere eveniet, repellat deserunt asperiores non. Mollitia sunt blanditiis fugiat error doloremque? Quod animi consequuntur voluptatibus provident sed minus, molestiae praesentium odit harum autem qui cupiditate mollitia, ducimus eum corrupti hic expedita placeat impedit debitis dolorum, recusandae sequi. Minima at debitis officia. Perspiciatis ullam aut at architecto!</p>
-            <p class="a-paragraph">Ipsa voluptatibus assumenda rerum, reprehenderit in libero ipsum aspernatur sed dolores laboriosam illum animi facilis nam. Nulla porro voluptate quo ducimus, suscipit quae ipsum, atque ea officia hic aliquid sunt a, officiis totam deleniti harum voluptatum minima? Aliquid excepturi, id minima nesciunt voluptas cumque dolore repellendus itaque? Officia, autem? Repudiandae illum officia officiis laboriosam alias animi quidem.</p>
-            <p class="a-paragraph">Ipsum dolor, sit amet consectetur adipisicing elit. Harum mollitia laudantium ea ad officia. Distinctio minima, dolor aliquam earum error nobis deleniti! Consequatur unde ipsam deserunt optio consectetur! Aliquam recusandae quasi voluptates accusamus nisi facilis id, dolorem, temporibus suscipit consectetur perferendis laboriosam? Iusto aut nisi fugiat nemo eos impedit ullam laudantium!</p>
+            <p class="article-h2">Enfin !</p>
+            <p class="article-paragraph">Ça y est, on a enfin un site web ! Cela fait maintenant de longues semaines qu’on l’attendait et on est ravis de finalement pouvoir le partager avec vous. Nous avons passer beaucoup de temps à y réfléchir et designer les premières versions, c’est bon un plaisir d’enfin le voir accessible par tous. D’ailleurs si jamais vous vous posez la question de savoir qui c’est “on”, allez jeter un coup d’oeil à notre <a href="{{ url_for('qui_sommes_nous') }}" class="article-link">page Qui sommes-nous ?</a>, vous y trouverez une présentation rapide d’Avenirs Souhaitables et des différents membres de l’équipe.</p>
+            <p class="article-h2">La première brique</p>
+            <p class="article-paragraph">Ce premier pas va nous permettre de toucher une audience plus large et de proposer de nouveaux types de contenus que ce que nous avons pu faire jusqu’à présent sur LinkedIn. Dans un premier temps, nous allons nous concentrer sur des articles journalistiques. Ces articles ont vocation à creuser plus en profondeur les sujets relatifs à la préservation du climat et de la biodiversité. Le premier de ces articles est intitulé <a href="{{ url_for('article_00002') }}" class="article-link">“Pourquoi un objectif de 2 tonnes de CO2 en 2050?”</a>. À plus long terme, nous pourrons utiliser ce site internet pour continuer de construire et diversifier nos moyens de communication et de sensibilisation. </p>
+            <p class="article-h2">La construction du site</p>
+            <p class="article-paragraph">Il est également important de savoir que ce site a été entièrement construit par nos soins en utilisant les technologies web de base (HTML, CSS et JavaScript). En l’occurence ce n’est pas notre corps de métier initial et il est donc possible que certaines coquilles se soient glissées au passage. Si jamais vous en remarquez n’hésitez pas à nous le signaler, sur LinkedIn par exemple. Après si par hasard vous êtes experts, ou même juste amateur, de développement web, vous pouvez <a href="https://www.linkedin.com/in/thomas-waldura/" class="article-link">contacter notre responsable du site internet</a>. C’est avec grand plaisir que nous pourront échanger sur le code ou évoquer les différentes pistes d’amélioration. </p>
+            <p class="article-paragraph">En attendant la parution de nouveaux articles, on vous invite à suivre notre page LinkedIn. Nous écrirons un post pour annoncer la mise en ligne de nos prochaines rubriques, qui arriveront vite !</p>
+
+
         </div>
 
      </div>
@@ -114,3 +124,7 @@
     </footer>
 
 </body>
+
+<script type="text/javascript" src="{{url_for('static', filename='script.js')}}"></script>
+
+</html>

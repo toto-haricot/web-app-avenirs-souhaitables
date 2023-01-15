@@ -38,13 +38,13 @@
             <div class="select-menu">
                 <div class="select-btn">
                     <span class="sBtn-text"></span>
-                    <i class="fa-solid fa-bars fa-xl"></i>
+                    <i class="fa-solid fa-bars fa-4x"></i>
                 </div>
         
                 <div id="options-list" class="options">
 
                     <div class="option">
-                        <a href="{{ url_for('tous_nos_articles') }}"><span class="option-text">Tous nos articles</span></a>
+                        <a class="option-link" href="{{ url_for('tous_nos_articles') }}"><span class="option-text">Tous nos articles</span></a>
                     </div>
 
                     <div class="option">
@@ -72,16 +72,21 @@
             <a href="{{ url_for('article_00002') }}">
                 <span class="make-article-clickable"></span>
             </a>
-            <div class="article-alu-image"></div>
+            <div 
+                class="article-alu-image"
+                style="background-image: url(../static/img/unsplash-0005.jpg); 
+                       background-size: 200%;
+                       background-position: 50% 50%;">
+            </div>
             <div class="article-alu-overview">
                 <div class="article-alu-overview-category">
-                    CARBONE
+                    EMPREINTE CARBONE
                 </div>
                 <div class="article-alu-overview-title">
                     Pourquoi un objectif de 2 tonnes de C02 en 2050 ?
                 </div>
                 <div class="article-alu-overview-extract">
-                    Il est possible que vous ayez déjà vu passer un chiffre symbolique dans les disucssions sur le climat : en 2050 nous aurions un budget carbone de 2 tonnes de CO2e par an et par personne sur Terre. 
+                    Il est possible que vous ayez déjà vu passer un chiffre symbolique dans les discussions sur le climat : en 2050 nous aurions un budget carbone de 2 tonnes de CO2e par an et par personne sur Terre. 
                     Nous allons décrypter dans cet article l origine de cet objectif, sa signification et savoir s il est atteignable. 
                 </div>
                 
@@ -104,17 +109,21 @@
                 <a href="{{ url_for('article_00001') }}">
                     <span class="make-article-clickable"></span>
                 </a>
-                <div class="article-lb-image">
+                <div 
+                    class="article-lb-image"
+                    style="background-image: url(../static/img/unsplash-0011.jpg); 
+                           background-size: 100%;
+                           background-position: center 23%;">
                 </div>
                 <div class="article-lb-overview">
                     <div class="article-lb-overview-category">
-                        CARBONE
+                        COMMUNAUTÉ
                     </div>
                     <div class="article-lb-overview-title">
-                        Nous avons un nouveau site web !
+                        Nous avons un site web !
                     </div>
                     <div class="article-lb-overview-extract">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Error aut ipsam autem vero voluptatum blanditiis natus aliquid. Quas, impedit dolorum?
+                        Ça y est, Avenirs Souhaitable a un site web ! Pour bien commencer on vous en dit un peu plus sur ce projet, son niveau d'avancement et sa finalité.
                     </div>
                 </div>
             </div>
